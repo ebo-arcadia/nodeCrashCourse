@@ -36,7 +36,7 @@ const server = http.createServer((request, response) => {
         })
     }
 
-    if(request.url === '/api/users') {
+    if(request.url === '/about') {
         // fs.readFile(
         // path.join(__dirname, 'public', 'about.html'), 
         // (error, content) => {
@@ -44,14 +44,8 @@ const server = http.createServer((request, response) => {
         //     response.writeHead(200, { 'Content-Type': 'text/html' });
         //     response.end(content);
         // })
-
-        // build RESTful API / micro-services
-        const users = [
-            { name: 'John Smith', title: 'economist'},
-            { name: 'Williams James', title: 'thelogian'}
-        ];
-        response.writeHead(200, { 'Content-Type': 'application/json' });
-        response.end(JSON.stringify(users));
+        
+        // fetch api data
     }
 });
 

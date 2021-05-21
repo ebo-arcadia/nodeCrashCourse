@@ -45,7 +45,7 @@ const server = http.createServer((request, response) => {
         //     response.end(content);
         // })
 
-        // build RESTful API / micro-services
+        // fetch api data
         const users = [
             { name: 'John Smith', title: 'economist'},
             { name: 'Williams James', title: 'thelogian'}

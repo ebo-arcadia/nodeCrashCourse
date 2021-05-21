@@ -45,13 +45,11 @@ const server = http.createServer((request, response) => {
         //     response.end(content);
         // })
 
-        // build RESTful API / micro-services
+        // fetch api data
         const users = [
             { name: 'John Smith', title: 'economist'},
             { name: 'Williams James', title: 'thelogian'}
-        ];
-        response.writeHead(200, { 'Content-Type': 'application/json' });
-        response.end(JSON.stringify(users));
+        ]
     }
 });
 
